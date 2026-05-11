@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/FSM_Demo/FSM_Seq_0110_cpld
+vbcd_7seg
+Z0 !s110 1778483021
+!i10b 1
+!s100 7QW7mgk8LP8@iGakPhl1_1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I3P=b:m@64ccED0dLYSaE^3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/FSM_Demo/FSM_Timer_demo
+w1768444092
+8C:/FSM_Demo/FSM_Timer_demo/bcd_7seg.v
+FC:/FSM_Demo/FSM_Timer_demo/bcd_7seg.v
+!i122 9
+L0 14 22
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1778483021.000000
+!s107 C:/FSM_Demo/FSM_Timer_demo/bcd_7seg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/FSM_Demo/FSM_Timer_demo/bcd_7seg.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vclk_div
+R0
+!i10b 1
+!s100 kWacf8Z0CUln2F_7L97bi3
+R1
+I?NQj]bgfU0VKzoLEj5>0G0
+R2
+R3
+w1777874238
+8C:/FSM_Demo/FSM_Timer_demo/clk_div.v
+FC:/FSM_Demo/FSM_Timer_demo/clk_div.v
+!i122 10
+L0 17 27
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/FSM_Demo/FSM_Timer_demo/clk_div.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/FSM_Demo/FSM_Timer_demo/clk_div.v|
+!i113 1
+R6
+R7
