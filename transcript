@@ -1,37 +1,12 @@
-# Compile of timer_demo.v failed with 10 errors.
-# Compile of timer_demo.v failed with 10 errors.
-# Compile of timer_demo.v failed with 6 errors.
-# Compile of timer_demo.v failed with 6 errors.
-# Compile of timer_demo.v failed with 6 errors.
-# Compile of timer_demo.v failed with 3 errors.
-# Compile of timer_demo.v failed with 1 errors.
-# Compile of timer_demo.v failed with 25 errors.
-# Compile of timer_demo.v failed with 1 errors.
-# Compile of timer_demo.v failed with 3 errors.
-# Compile of timer_demo.v failed with 4 errors.
-# Compile of timer_demo.v failed with 3 errors.
-# Compile of timer_demo.v failed with 3 errors.
-# Compile of bcd_7seg.v was successful.
-# 2 compiles, 1 failed with 3 errors.
-# Compile of timer_demo.v failed with 3 errors.
-# Compile of timer_demo.v failed with 25 errors.
-# Compile of timer_demo.v failed with 3 errors.
-# Compile of bcd_7seg.v was successful.
 # Compile of clk_div.v was successful.
-# 3 compiles, 1 failed with 3 errors.
-# Compile of timer_demo.v failed with 4 errors.
+# Compile of testbench.v was successful.
+# Compile of timer_demo.v was successful.
+# Compile of top_timer_demo.v was successful.
 # Compile of bcd_7seg.v was successful.
+# 5 compiles, 0 failed with no errors.
 # Compile of clk_div.v was successful.
-# 3 compiles, 1 failed with 4 errors.
-# Compile of timer_demo.v failed with 28 errors.
+# Compile of testbench.v was successful.
+# Compile of timer_demo.v was successful.
+# Compile of top_timer_demo.v was successful.
 # Compile of bcd_7seg.v was successful.
-# Compile of clk_div.v was successful.
-# 3 compiles, 1 failed with 28 errors.
-# Compile of timer_demo.v failed with 3 errors.
-# Compile of bcd_7seg.v was successful.
-# Compile of clk_div.v was successful.
-# 3 compiles, 1 failed with 3 errors.
-# Compile of timer_demo.v failed with 4 errors.
-# Compile of bcd_7seg.v was successful.
-# Compile of clk_div.v was successful.
-# 3 compiles, 1 failed with 4 errors.
+# 5 compiles, 0 failed with no errors.

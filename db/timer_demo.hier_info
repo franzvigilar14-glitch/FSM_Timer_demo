@@ -1,0 +1,30 @@
+|timer_demo
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+clk => t[0].CLK
+clk => t[1].CLK
+clk => t[2].CLK
+clk => t[3].CLK
+clk => pre~1.DATAIN
+rst => t[0].ACLR
+rst => t[1].ACLR
+rst => t[2].ACLR
+rst => t[3].ACLR
+rst => pre~3.DATAIN
+ovr => nxt.S0.OUTPUTSELECT
+ovr => nxt.S1.OUTPUTSELECT
+ovr => nxt.S2.OUTPUTSELECT
+ovr => t.OUTPUTSELECT
+ovr => t.OUTPUTSELECT
+ovr => t.OUTPUTSELECT
+ovr => t.OUTPUTSELECT
+ovr => pre.S3.DATAIN
+timer[0] <= t[0].DB_MAX_OUTPUT_PORT_TYPE
+timer[1] <= t[1].DB_MAX_OUTPUT_PORT_TYPE
+timer[2] <= t[2].DB_MAX_OUTPUT_PORT_TYPE
+timer[3] <= t[3].DB_MAX_OUTPUT_PORT_TYPE
+state[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= <GND>
+state[3] <= <GND>
+
+

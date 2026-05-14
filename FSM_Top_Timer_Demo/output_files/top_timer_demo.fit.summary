@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu May 14 11:05:27 2026
+Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+Revision Name : top_timer_demo
+Top-level Entity Name : top_timer_demo
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 97 / 240 ( 40 % )
+Total pins : 19 / 80 ( 24 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

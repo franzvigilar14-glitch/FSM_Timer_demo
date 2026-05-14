@@ -1,0 +1,47 @@
+module top_timer_demo (out, leds_timer, leds_state, clk_led, clk_in, rst, ovr);
+
+ //ports
+ input               ovr;
+ input               rst;
+ input            clk_in;
+ output          clk_led;
+ output              out;
+ output [0:6] leds_state;
+ output [0:6] leds_timer;
+ 
+ //nets
+ wire clk_w;
+ wire [3:0] state_w;
+ wire [3:0] timer_w;
+ 
+ // seq instance
+ timer_demo timer_demo(
+ 	.out(out),
+ 	.state(state_w),
+ 	.timer(timer_w),
+ 	.ovr(ovr),
+ 	.clk(clk_w),
+ 	.rst(rst)
+ 
+ );
+ 
+ // 7-segment instance 
+    bcd_7seg seg_timer(
+         .leds(leds_timer),
+         .bcd(timer_w)    
+     );
+     
+   // 7-segment instance 
+      bcd_7seg seg_state(
+           .leds(leds_state),
+           .bcd(state_w)    
+     );
+     
+     // clock divider instance
+      clk_div #(.PERIOD_OUT(2)) clk_div_ins(
+         .clk_in(clk_in),    
+         .clk_out(clk_w),
+         .clk_led(clk_led)
+ );
+
+endmodule

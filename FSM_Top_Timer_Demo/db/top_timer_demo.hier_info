@@ -1,0 +1,119 @@
+|top_timer_demo
+out << timer_demo:timer_demo.out
+leds_timer[6] << bcd_7seg:seg_timer.leds
+leds_timer[5] << bcd_7seg:seg_timer.leds
+leds_timer[4] << bcd_7seg:seg_timer.leds
+leds_timer[3] << bcd_7seg:seg_timer.leds
+leds_timer[2] << bcd_7seg:seg_timer.leds
+leds_timer[1] << bcd_7seg:seg_timer.leds
+leds_timer[0] << bcd_7seg:seg_timer.leds
+leds_state[6] << bcd_7seg:seg_state.leds
+leds_state[5] << bcd_7seg:seg_state.leds
+leds_state[4] << bcd_7seg:seg_state.leds
+leds_state[3] << bcd_7seg:seg_state.leds
+leds_state[2] << bcd_7seg:seg_state.leds
+leds_state[1] << bcd_7seg:seg_state.leds
+leds_state[0] << bcd_7seg:seg_state.leds
+clk_led << clk_div:clk_div_ins.clk_led
+clk_in => clk_in.IN1
+rst => rst.IN1
+ovr => ovr.IN1
+
+
+|top_timer_demo|timer_demo:timer_demo
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+clk => t[0].CLK
+clk => t[1].CLK
+clk => t[2].CLK
+clk => t[3].CLK
+clk => pre~1.DATAIN
+rst => t[0].ACLR
+rst => t[1].ACLR
+rst => t[2].ACLR
+rst => t[3].ACLR
+rst => pre~3.DATAIN
+ovr => nxt.S0.OUTPUTSELECT
+ovr => nxt.S1.OUTPUTSELECT
+ovr => nxt.S2.OUTPUTSELECT
+ovr => t.OUTPUTSELECT
+ovr => t.OUTPUTSELECT
+ovr => t.OUTPUTSELECT
+ovr => t.OUTPUTSELECT
+ovr => pre.S3.DATAIN
+timer[0] <= t[0].DB_MAX_OUTPUT_PORT_TYPE
+timer[1] <= t[1].DB_MAX_OUTPUT_PORT_TYPE
+timer[2] <= t[2].DB_MAX_OUTPUT_PORT_TYPE
+timer[3] <= t[3].DB_MAX_OUTPUT_PORT_TYPE
+state[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= <GND>
+state[3] <= <GND>
+
+
+|top_timer_demo|bcd_7seg:seg_timer
+leds[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+leds[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+
+
+|top_timer_demo|bcd_7seg:seg_state
+leds[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+leds[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+
+
+|top_timer_demo|clk_div:clk_div_ins
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_led <= clk_led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_in => tick_cnt[0].CLK
+clk_in => tick_cnt[1].CLK
+clk_in => tick_cnt[2].CLK
+clk_in => tick_cnt[3].CLK
+clk_in => tick_cnt[4].CLK
+clk_in => tick_cnt[5].CLK
+clk_in => tick_cnt[6].CLK
+clk_in => tick_cnt[7].CLK
+clk_in => tick_cnt[8].CLK
+clk_in => tick_cnt[9].CLK
+clk_in => tick_cnt[10].CLK
+clk_in => tick_cnt[11].CLK
+clk_in => tick_cnt[12].CLK
+clk_in => tick_cnt[13].CLK
+clk_in => tick_cnt[14].CLK
+clk_in => tick_cnt[15].CLK
+clk_in => tick_cnt[16].CLK
+clk_in => tick_cnt[17].CLK
+clk_in => tick_cnt[18].CLK
+clk_in => tick_cnt[19].CLK
+clk_in => tick_cnt[20].CLK
+clk_in => tick_cnt[21].CLK
+clk_in => tick_cnt[22].CLK
+clk_in => tick_cnt[23].CLK
+clk_in => tick_cnt[24].CLK
+clk_in => tick_cnt[25].CLK
+clk_in => tick_cnt[26].CLK
+clk_in => tick_cnt[27].CLK
+clk_in => tick_cnt[28].CLK
+clk_in => tick_cnt[29].CLK
+clk_in => tick_cnt[30].CLK
+clk_in => tick_cnt[31].CLK
+clk_in => clk_led~reg0.CLK
+clk_in => clk_out~reg0.CLK
+
+

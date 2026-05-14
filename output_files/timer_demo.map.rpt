@@ -1,5 +1,5 @@
-Analysis & Elaboration report for timer_demo
-Mon May 11 15:07:38 2026
+Analysis & Synthesis report for timer_demo
+Mon May 11 19:35:55 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -7,11 +7,17 @@ Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
-  6. Analysis & Elaboration Suppressed Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |timer_demo|pre
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -35,35 +41,23 @@ on the Quartus Prime software download page.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                  ;
-+-------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status ; Failed - Mon May 11 15:07:38 2026               ;
-; Quartus Prime Version         ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
-; Revision Name                 ; timer_demo                                      ;
-; Top-level Entity Name         ; timer_demo                                      ;
-; Family                        ; MAX II                                          ;
-+-------------------------------+-------------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 10          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-----------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Mon May 11 19:35:55 2026           ;
+; Quartus Prime Version       ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
+; Revision Name               ; timer_demo                                      ;
+; Top-level Entity Name       ; timer_demo                                      ;
+; Family                      ; MAX II                                          ;
+; Total logic elements        ; 19                                              ;
+; Total pins                  ; 12                                              ;
+; Total virtual pins          ; 0                                               ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                                   ;
++-----------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -133,33 +127,159 @@ on the Quartus Prime software download page.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path            ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------+---------+
+; timer_demo.v                     ; yes             ; Auto-Found Verilog HDL File  ; C:/FSM_Demo/FSM_Timer_demo/timer_demo.v ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 19    ;
+;     -- Combinational with no register       ; 11    ;
+;     -- Register only                        ; 1     ;
+;     -- Combinational with a register        ; 7     ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 10    ;
+;     -- 3 input functions                    ; 2     ;
+;     -- 2 input functions                    ; 6     ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 19    ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 8     ;
+;                                             ;       ;
+; Total registers                             ; 8     ;
+; I/O pins                                    ; 12    ;
+; Maximum fan-out node                        ; t[0]  ;
+; Maximum fan-out                             ; 9     ;
+; Total fan-out                               ; 86    ;
+; Average fan-out                             ; 2.77  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; |timer_demo                ; 19 (19)     ; 8            ; 0          ; 12   ; 0            ; 11 (11)      ; 1 (1)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |timer_demo         ; timer_demo  ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------------------+
+; State Machine - |timer_demo|pre            ;
++--------+--------+--------+--------+--------+
+; Name   ; pre.S3 ; pre.S2 ; pre.S1 ; pre.S0 ;
++--------+--------+--------+--------+--------+
+; pre.S0 ; 0      ; 0      ; 0      ; 0      ;
+; pre.S1 ; 0      ; 0      ; 1      ; 1      ;
+; pre.S2 ; 0      ; 1      ; 0      ; 1      ;
+; pre.S3 ; 1      ; 0      ; 0      ; 1      ;
++--------+--------+--------+--------+--------+
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; pre~4                                 ; Lost fanout        ;
+; pre~5                                 ; Lost fanout        ;
+; pre~6                                 ; Lost fanout        ;
+; pre~7                                 ; Lost fanout        ;
+; Total Number of Removed Registers = 4 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 8     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |timer_demo|t[0]           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Mon May 11 15:07:18 2026
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off timer_demo -c timer_demo --analysis_and_elaboration
+    Info: Processing started: Mon May 11 19:35:30 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off timer_demo -c timer_demo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file clk_div.v
-    Info (12023): Found entity 1: clk_div File: C:/FSM_Demo/FSM_Timer_demo/clk_div.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file bcd_7seg.v
     Info (12023): Found entity 1: bcd_7seg File: C:/FSM_Demo/FSM_Timer_demo/bcd_7seg.v Line: 14
-Error (10170): Verilog HDL syntax error at timer_demo.v(47) near text: "if";  expecting an operand. Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/FSM_Demo/FSM_Timer_demo/timer_demo.v Line: 47
-Error (10112): Ignored design unit "timer_demo" at timer_demo.v(1) due to previous errors File: C:/FSM_Demo/FSM_Timer_demo/timer_demo.v Line: 1
-Info (144001): Generated suppressed messages file C:/FSM_Demo/FSM_Timer_demo/output_files/timer_demo.map.smsg
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4725 megabytes
-    Error: Processing ended: Mon May 11 15:07:38 2026
-    Error: Elapsed time: 00:00:20
-    Error: Total CPU time (on all processors): 00:00:33
-
-
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
-The suppressed messages can be found in C:/FSM_Demo/FSM_Timer_demo/output_files/timer_demo.map.smsg.
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.v
+    Info (12023): Found entity 1: testbench File: C:/FSM_Demo/FSM_Timer_demo/testbench.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file clk_div.v
+    Info (12023): Found entity 1: clk_div File: C:/FSM_Demo/FSM_Timer_demo/clk_div.v Line: 17
+Warning (12125): Using design file timer_demo.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: timer_demo File: C:/FSM_Demo/FSM_Timer_demo/timer_demo.v Line: 1
+Info (12127): Elaborating entity "timer_demo" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at timer_demo.v(51): truncated value with size 32 to match size of target (4) File: C:/FSM_Demo/FSM_Timer_demo/timer_demo.v Line: 51
+Warning (10230): Verilog HDL assignment warning at timer_demo.v(58): truncated value with size 32 to match size of target (4) File: C:/FSM_Demo/FSM_Timer_demo/timer_demo.v Line: 58
+Warning (10230): Verilog HDL assignment warning at timer_demo.v(65): truncated value with size 32 to match size of target (4) File: C:/FSM_Demo/FSM_Timer_demo/timer_demo.v Line: 65
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "state[2]" is stuck at GND File: C:/FSM_Demo/FSM_Timer_demo/timer_demo.v Line: 7
+    Warning (13410): Pin "state[3]" is stuck at GND File: C:/FSM_Demo/FSM_Timer_demo/timer_demo.v Line: 7
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
+Info (21057): Implemented 31 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 19 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4749 megabytes
+    Info: Processing ended: Mon May 11 19:35:55 2026
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:42
 
 
