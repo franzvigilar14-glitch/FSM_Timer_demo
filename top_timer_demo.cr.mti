@@ -19,13 +19,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	testbench
 
-} {} {}} C:/FSM_Demo/FSM_Timer_demo/clk_div.v {1 {vlog -work work -stats=none C:/FSM_Demo/FSM_Timer_demo/clk_div.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module clk_div
-
-Top level modules:
-	clk_div
-
 } {} {}} C:/FSM_Demo/FSM_Timer_demo/timer_demo.v {1 {vlog -work work -stats=none C:/FSM_Demo/FSM_Timer_demo/timer_demo.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module timer_demo

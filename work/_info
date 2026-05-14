@@ -10,7 +10,7 @@ z2
 cModel Technology
 dC:/FSM_Demo/FSM_Seq_0110_cpld
 vbcd_7seg
-Z0 !s110 1778729184
+Z0 !s110 1778729480
 !i10b 1
 !s100 7QW7mgk8LP8@iGakPhl1_1
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,20 +20,20 @@ Z3 dC:/FSM_Demo/FSM_Timer_demo
 w1768444092
 8C:/Logic_2_Outputs/Verilog/L8_Counters/BCD_7seg/bcd_7seg.v
 FC:/Logic_2_Outputs/Verilog/L8_Counters/BCD_7seg/bcd_7seg.v
-!i122 286
+!i122 291
 L0 14 22
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1778729184.000000
+!s108 1778729480.000000
 !s107 C:/Logic_2_Outputs/Verilog/L8_Counters/BCD_7seg/bcd_7seg.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Logic_2_Outputs/Verilog/L8_Counters/BCD_7seg/bcd_7seg.v|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z5 o-work work
+Z6 tCvgOpt 0
 vbcd_7seg_state
-Z8 !s110 1778492062
+Z7 !s110 1778492062
 !i10b 1
 !s100 ^=NzT9oJWKhPBA0;6AYRY0
 R1
@@ -44,19 +44,19 @@ w1778486472
 8C:/FSM_Demo/FSM_Timer_demo/bcd_7seg_state.v
 FC:/FSM_Demo/FSM_Timer_demo/bcd_7seg_state.v
 !i122 194
-Z9 L0 1 22
+Z8 L0 1 22
 R4
 r1
 !s85 0
 31
-Z10 !s108 1778492062.000000
+Z9 !s108 1778492062.000000
 !s107 C:/FSM_Demo/FSM_Timer_demo/bcd_7seg_state.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/FSM_Demo/FSM_Timer_demo/bcd_7seg_state.v|
 !i113 1
+R5
 R6
-R7
 vbcd_7seg_timer
-R8
+R7
 !i10b 1
 !s100 3oC5V_GF:0;Kg?JJj`d;^3
 R1
@@ -67,42 +67,42 @@ w1778486478
 8C:/FSM_Demo/FSM_Timer_demo/bcd_7seg_timer.v
 FC:/FSM_Demo/FSM_Timer_demo/bcd_7seg_timer.v
 !i122 195
-R9
+R8
 R4
 r1
 !s85 0
 31
-R10
+R9
 !s107 C:/FSM_Demo/FSM_Timer_demo/bcd_7seg_timer.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/FSM_Demo/FSM_Timer_demo/bcd_7seg_timer.v|
 !i113 1
+R5
 R6
-R7
 vclk_div
-Z11 !s110 1778729183
+Z10 !s110 1778729479
 !i10b 1
 !s100 kWacf8Z0CUln2F_7L97bi3
 R1
 I?NQj]bgfU0VKzoLEj5>0G0
 R2
 R3
-w1778728473
+w1778729468
 8C:/FSM_Demo/FSM_Timer_demo/clk_div.v
 FC:/FSM_Demo/FSM_Timer_demo/clk_div.v
-!i122 282
+!i122 287
 L0 17 27
 R4
 r1
 !s85 0
 31
-Z12 !s108 1778729183.000000
+Z11 !s108 1778729479.000000
 !s107 C:/FSM_Demo/FSM_Timer_demo/clk_div.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/FSM_Demo/FSM_Timer_demo/clk_div.v|
 !i113 1
+R5
 R6
-R7
 vtestbench
-R11
+R10
 !i10b 1
 !s100 enW^1^C^N;7892blVh31T1
 R1
@@ -112,20 +112,20 @@ R3
 w1778729023
 8C:\FSM_Demo\FSM_Timer_demo\testbench.v
 FC:\FSM_Demo\FSM_Timer_demo\testbench.v
-!i122 283
+!i122 288
 L0 3 38
 R4
 r1
 !s85 0
 31
-R12
+R11
 !s107 C:\FSM_Demo\FSM_Timer_demo\testbench.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:\FSM_Demo\FSM_Timer_demo\testbench.v|
 !i113 1
+R5
 R6
-R7
 vtimer_demo
-R0
+R10
 !i10b 1
 !s100 HnlUZB]S6J3IfmXD8n>RO1
 R1
@@ -135,38 +135,38 @@ R3
 w1778728720
 8C:/FSM_Demo/FSM_Timer_demo/timer_demo.v
 FC:/FSM_Demo/FSM_Timer_demo/timer_demo.v
-!i122 284
+!i122 289
 L0 15 102
 R4
 r1
 !s85 0
 31
-R12
+R11
 !s107 C:/FSM_Demo/FSM_Timer_demo/timer_demo.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/FSM_Demo/FSM_Timer_demo/timer_demo.v|
 !i113 1
+R5
 R6
-R7
 vtop_timer_demo
 R0
 !i10b 1
 !s100 >40zXSd2`iH0WXL7ISBbT3
 R1
-I694m]5R<Oa54bi^VNWVV43
+IMA2R0d8ICCI92Mo_Mj3b;1
 R2
 R3
 w1778728919
-8C:\FSM_Demo\FSM_Timer_demo\top_timer_demo.v
-FC:\FSM_Demo\FSM_Timer_demo\top_timer_demo.v
-!i122 285
+8C:/FSM_Demo/FSM_Timer_demo/top_timer_demo.v
+FC:/FSM_Demo/FSM_Timer_demo/top_timer_demo.v
+!i122 290
 L0 16 46
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:\FSM_Demo\FSM_Timer_demo\top_timer_demo.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\FSM_Demo\FSM_Timer_demo\top_timer_demo.v|
+R11
+!s107 C:/FSM_Demo/FSM_Timer_demo/top_timer_demo.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/FSM_Demo/FSM_Timer_demo/top_timer_demo.v|
 !i113 1
+R5
 R6
-R7

@@ -1,9 +1,14 @@
-# Compile of clk_div.v was successful.
-# Compile of testbench.v was successful.
-# Compile of timer_demo.v was successful.
-# Compile of top_timer_demo.v was successful.
-# Compile of bcd_7seg.v was successful.
-# 5 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 11:29:45 on May 14,2026
+# Loading work.testbench
+# Loading work.top_timer_demo
+# Loading work.timer_demo
+# Loading work.bcd_7seg
+# Loading work.clk_div
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/testbench/*
+run
 # Compile of clk_div.v was successful.
 # Compile of testbench.v was successful.
 # Compile of timer_demo.v was successful.
