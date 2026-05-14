@@ -21,7 +21,7 @@ module  clk_div(clk_out,clk_led,clk_in);
  output reg clk_led = 1'b0;
  
  // Division Factor
- parameter  integer FREQ_IN    = 2;                  // 50MHz
+ parameter  integer FREQ_IN    = 50_000_000;                  // 50MHz
  parameter  integer PERIOD_OUT = 1;                           // 1s
  localparam integer TICKS      = (FREQ_IN*PERIOD_OUT)/2;      // Number of ticks every 
  
